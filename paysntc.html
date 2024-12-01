@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paymentpg</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .ct{
+        background-color: aqua;
+        width: 60%;
+        height: 680px;
+        padding: 20px;
+       margin-left: 20%;
+       border-radius:5px;
+       box-shadow:  2px 2px 40px blue; 
+    }
+    .us{
+        text-align: center;
+        margin-top:60px;
+    } 
+    input{
+        width: 50%;
+        height: 50px;
+        border-radius:50px;
+        font-size:larger;
+        padding:10px;
+    } 
+    button{
+        width: 40%;
+        height: 50px;
+        border-radius:20px;
+        box-shadow:  2px 2px 40px blue;   
+        font-size: larger;
+                 
+    } 
+    button:hover{
+        background-color:blue ;
+        color:white;
+                 
+    } 
+    .img5{
+        width: 200px;
+        height: 200px;
+        border-radius:60px;
+        box-shadow:  2px 2px 40px blue; 
+
+    }
+    .ppp{
+            text-align: center;
+        }
+    .imgOM{
+        margin-left: 37%;
+    }
+    .main-con-one{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+        position: relative;
+        background-color: aquamarine;
+       
+        box-sizing: border-box;
+    }
+.dash{
+    display:inline-block;
+    margin: 10px;
+    position: relative;
+   
+}
+.bar{
+    display:block;
+    height: 4px;
+    width: 40px;
+    margin: 5px 0;
+    background-color:blue;
+    cursor: pointer;
+       
+   
+
+}
+.options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 15%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+
+h1{
+   text-align: center;
+}
+.entire{
+    background-color: aquamarine;
+    height: auto;
+    width: auto;
+}
+.img1{
+height: 100px;
+width: 100px;
+border-radius: 10px;
+}
+a{
+text-decoration: none;
+
+}
+
+
+
+    @media (max-width:760px) {
+        .ct{
+        background-color: aqua;
+        width: 65%;
+        height: 650px;
+        padding: 20px;
+       margin-left: 8%;
+       border-radius: 2px;
+       
+       box-shadow:  2px 2px 40px blue; 
+  
+    } 
+    .options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 45%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+
+    .img5{
+        width: 150px;
+        height: 150px;
+        border-radius:60px;
+        box-shadow:  2px 2px 40px blue; 
+
+    } 
+    .imgOM{
+        margin-left: 25%;
+    }
+
+    .hh{
+        text-align: center;
+    } 
+    input{
+        width: 70%;
+        height: 40px;
+        border-radius:20px;
+        
+    } 
+    button{
+        width: 45%;
+        height: 40px;
+        border-radius:10px;
+        box-shadow:  2px 2px 40px blue;   
+        font-size: larger;
+                 
+    } 
+
+}
+    </style>
+</head>
+<body>
+<div class="entire">
+    <hr>
+    <br>
+    <div class="h">
+    <h1>COMPUTER SCIENCE DEPARTMENT</h1> 
+    </div> 
+    <hr>      
+    <div class="main-con-one">
+        
+        <div class="dash"onclick="change()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+             <br>
+        <div class="options">
+            <ul>
+                <li>
+                    <a href="index.html"><b>HOME</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="about.html"><b>ABOUT US</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="login.html"><b>LOGIN to pay due</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="wcsdue.html"><b>WHY DEPT. DUE</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="contact.html"><b>CONTACT US</b></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="mg">
+            <img class="img1" src="ht5.jpg" alt="logo">
+        </div>        
+
+    </div>
+</div>
+
+<form id="paymentForm">
+    <div class="ct">
+        <div class="us">
+            <h1 class="hh"></h1>
+            <p>To pay your departmental due, provide your EMAIL ADDRESS please so that it will help in record keepig</p>
+        </div>
+        <br>
+        <div class="htn">
+            <div class="imgOM">
+                <img class="img5"src="ntc1.jpg" alt="ysu">
+            </div>
+            
+            
+        </div>
+        <br>
+        <div class="us">
+        <div class="pi">
+            <input type="email" name="email" id="email"placeholder="enter your email address...">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="pi">
+           <button type="submit" >pay</button>
+        </div>
+             </div>
+        
+    </div>
+    </form>
+     <script src="https://js.paystack.co/v2/inline.js"></script>
+     <script src="paymt.js"></script>
+     <script>
+        function change() {
+            const chn = document.querySelector(".options");
+            chn.style.display = chn.style.display ==="block" ? "none" : "block";
+        }
+    </script>
+</body>
+<p class="ppp">&copy; 2024 computer science. All right reserve.</p>
+    <p class="ppp">contact us: abrajiabraji113@gmail.com | +234 8144005101</p>
+ 
+</html>

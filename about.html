@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutpg</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .about{
+        background-color: aqua;
+        width: 60%;
+        height: auto;
+        padding: 20px;
+       margin-left: 15%;
+       box-shadow:  2px 2px 40px blue; 
+         
+    }
+    .main-con-one{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+        position: relative;
+        background-color: aquamarine;
+       
+        box-sizing: border-box;
+    }
+.dash{
+    display:inline-block;
+    margin: 10px;
+    position: relative;
+   
+}
+.bar{
+    display:block;
+    height: 4px;
+    width: 40px;
+    margin: 5px 0;
+    background-color:blue;
+    cursor: pointer;
+       
+   
+
+}
+.options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 15%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+
+h1{
+   text-align: center;
+}
+.entire{
+    background-color: aquamarine;
+    height: auto;
+    width: auto;
+}
+.img1{
+height: 100px;
+width: 100px;
+border-radius: 10px;
+}
+a{
+text-decoration: none;
+
+}
+    .ppp{
+            text-align: center;
+        }
+    .ar2{
+        text-align: center;
+    }
+    @media(max-width:760px){
+    .options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 45%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+.about{
+        background-color: aqua;
+        width: 62%;
+        height: auto;
+        padding: 20px;
+       margin-left: 12%;
+       box-shadow:  2px 2px 40px blue; 
+         
+    }
+             
+         } 
+    </style>
+</head>
+<body>
+<div class="entire">
+    <hr>
+    <br>
+    <div class="h">
+    <h1>COMPUTER SCIENCE DEPARTMENT</h1> 
+    </div> 
+    <hr>      
+    <div class="main-con-one">
+        
+        <div class="dash"onclick="change()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+             <br>
+        <div class="options">
+            <ul>
+                <li>
+                    <a href="index.html"><b>HOME</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="about.html"><b>ABOUT US</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="login.html"><b>LOGIN to pay due</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="wcsdue.html"><b>WHY DEPT. DUE</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="contact.html"><b>CONTACT US</b></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="mg">
+            <img class="img1" src="ht5.jpg" alt="logo">
+        </div>        
+
+    </div>
+</div>
+
+ <div class="about">
+    <div class="cs">
+        <hr>
+        <h1 class="ar2">Welcome to computer science department Online System</h1>
+        <hr>
+        <p>Our department is dedicated to streamlining academic and administrative processes for students and staff. Our state-of-the-art platform ensures secure transactions, efficient record management, and real-time updates. Founded in [2024], we have continually evolved to meet the needs of our students, providing exceptional services rooted in innovation and excellence.</p>
+    </div>
+    <br>
+    <div class="wwa">
+        <h1>who we are</h1>
+        <p>The computer science online payment system is committed to empowering students and staff through innovative solutions. Our goal is to simplify administrative processes and deliver efficient services with reliability and security.</p>
+    </div>
+    <br>
+    <div class="wwd">
+        <h1>what we do</h1>
+        <p>Our departmental system streamlines:</p>
+        <ul>
+            <li>Payment Processes: Manage fees and transactions seamlessly.</li>
+            <li>Record Management: Maintain accurate, accessible records in real time.</li>
+            <li>User Support: Provide comprehensive assistance to users 24/7.</li>
+        </ul>
+    </div>
+    <br>
+    <div class="mission">
+        <h1>our mission</h1>
+        <p>To provide a seamless digital experience, enhancing productivity and accessibility for all users</p>
+    </div>
+    <br>
+    <div class="vision">
+        <h1>our vision</h1>
+        <p>To be a leader in digital transformation within education, enhancing productivity and fostering transparency.</p>
+    </div>
+    <br>
+    <div class="ocv">
+        <h1>Our Core Values</h1>
+       <ul>
+        <li>Integrity: Trustworthy and transparent operations.</li>
+        <li>Innovation: Leveraging technology for continuous improvement.</li>
+        <li>User-Centricity: Prioritizing ease of use and accessibility.</li>
+       </ul>
+    </div>
+    <br>
+    <div class="ccmt">
+        <h1>Our Commitment</h1>
+        <p>We are dedicated to creating a platform that serves the needs of our users while maintaining the highest standards of quality, security, and efficiency.</p>
+    </div>
+ 
+ </div>  
+ <script>
+        function change() {
+            const chn = document.querySelector(".options");
+            chn.style.display = chn.style.display ==="block" ? "none" : "block";
+        }
+    </script> 
+</body>
+<p class="ppp">&copy; 2024 computer science. All right reserve.</p>
+<p class="ppp">contact us: abrajiabraji113@gmail.com | +234 8144005101</p>
+ 
+</html>

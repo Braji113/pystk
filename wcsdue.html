@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whydpsys</title>
+    <style>
+        body{
+            background-color: mediumturquoise;
+        }
+    .u{
+         background-color:mediumaquamarine;
+         height: 2000px;
+         width: 50%;
+         box-shadow:  2px 2px 40px blue; 
+         
+         margin-left: 20%;
+         border-radius: 5px;
+        }
+        h1{
+           text-align: center;
+        }
+       dt, p{
+            margin-left: 2%;
+        }
+        .l{
+         background-color:red;
+         height: 40px;
+         width: 30%;
+         box-shadow:  2px 2px 40px blue;
+         
+         margin-left: 32%;
+         border-radius: 30px;
+
+        }
+        .li{
+         background-color:aliceblue;
+         height: 45px;
+         width: 35%;
+         box-shadow:  2px 2px 40px blue;
+         
+         margin-left:  30%;
+         border-radius: 30px;
+
+        }
+        .z{
+            margin-left: 30%;
+            font-size: x-large;
+        }
+        .di{
+            background-color:aliceblue;
+            border-radius: 10px;
+            height: 120px;
+            width: 490px;
+            margin-left: 7%;
+            box-shadow: 15px 15px 25px blue;
+            text-align: center;
+        }
+        .ppp{
+            text-align: center;
+        }
+        .dc{
+           background-color:aliceblue;
+            border-radius: 10px;
+            height: 230px;
+            width: 490px;
+            margin-left: 7%;
+            box-shadow: 15px 15px 25px blue;  
+        }
+        .dd{
+          background-color:aliceblue;
+            border-radius: 10px;
+            height: 280px;
+            width: 490px;
+           
+            box-shadow: 15px 15px 25px blue;   
+        }
+        .de{
+           background-color:aliceblue;
+            border-radius: 10px;
+            height:300px;
+            width: 490px;
+           
+            box-shadow: 15px 15px 25px blue;     
+        }
+        .df{
+           background-color:aliceblue;
+            border-radius: 10px;
+            height: 270px;
+            width: 490px;
+           
+            box-shadow: 15px 15px 25px blue;       
+        }
+        .dg{
+             background-color:aliceblue;
+            border-radius: 10px;
+            height: 250px;
+            width: 490px;
+           
+            box-shadow: 15px 15px 25px blue;     
+        }
+        .main-con-one{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+        position: relative;
+        background-color: aquamarine;
+       
+        box-sizing: border-box;
+    }
+.dash{
+    display:inline-block;
+    margin: 10px;
+    position: relative;
+   
+}
+.bar{
+    display:block;
+    height: 4px;
+    width: 40px;
+    margin: 5px 0;
+    background-color:blue;
+    cursor: pointer;
+       
+   
+
+}
+.options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 15%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+
+h1{
+   text-align: center;
+}
+.entire{
+    background-color: aquamarine;
+    height: auto;
+    width: auto;
+}
+.img1{
+height: 100px;
+width: 100px;
+border-radius: 10px;
+}
+a{
+text-decoration: none;
+
+}
+        .para{
+            font-size: larger;
+            font-weight: bolder;
+        }
+        dt{
+        font-weight: bolder;
+        font-style: normal;
+        }
+        dd,li{
+            font-style: italic;
+            font-weight: bold;
+        }
+        @media(max-width:760px){
+         .u{
+         background-color:mediumaquamarine;
+         height: 2220px;
+         width: 90%;
+         box-shadow:  2px 2px 40px blue; 
+         
+         margin-left: 3%;
+         border-radius: 5px;
+        } 
+        .dc{
+           background-color:aliceblue;
+            border-radius: 10px;
+            height: 310px;
+            width: 280px;
+            margin-left: 7%;
+            box-shadow: 15px 15px 25px blue;  
+        } 
+        .di{
+            background-color:aliceblue;
+            border-radius: 10px;
+            height: 180px;
+            width: 270px;
+            margin-left: 7%;
+            box-shadow: 15px 15px 25px blue;
+            text-align: center;
+        }
+        .para{
+            font-size: medium;
+            font-weight: bolder;
+        }
+        .dd{
+          background-color:aliceblue;
+            border-radius: 10px;
+            height: 300px;
+            width: 270px;
+           
+            box-shadow: 15px 15px 25px blue;   
+        }
+        .df{
+           background-color:aliceblue;
+            border-radius: 10px;
+            height: 300px;
+            width: 270px;
+           
+            box-shadow: 15px 15px 25px blue;       
+        }
+        .de{
+           background-color:aliceblue;
+            border-radius: 10px;
+            height: 390px;
+            width: 270px;
+           
+            box-shadow: 15px 15px 25px blue;     
+        }
+        .dg{
+             background-color:aliceblue;
+            border-radius: 10px;
+            height: 260px;
+            width: 270px;
+           
+            box-shadow: 15px 15px 25px blue;     
+        }
+        .options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 45%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+
+        }
+    </style>
+</head>
+<body>
+<div class="entire">
+    <hr>
+    <br>
+    <div class="h">
+    <h1>COMPUTER SCIENCE DEPARTMENT</h1> 
+    </div> 
+    <hr>      
+    <div class="main-con-one">
+        
+        <div class="dash"onclick="change()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+             <br>
+        <div class="options">
+            <ul>
+                <li>
+                    <a href="index.html"><b>HOME</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="about.html"><b>ABOUT US</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="login.html"><b>LOGIN to pay due</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="wcsdue.html"><b>WHY DEPT. DUE</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="contact.html"><b>CONTACT US</b></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="mg">
+            <img class="img1" src="ht5.jpg" alt="logo">
+        </div>        
+
+    </div>
+</div>
+
+ <div class="u">
+        <br>
+        <br>
+    <div class="di">
+           <br>
+            
+        <header>
+            
+            <h1>DEPARTMENTAL DUE</h1>
+            
+        </header>
+       
+
+    </div>
+    <br>
+    <div class="dc">
+        <br>
+        <br>
+
+    <dt>Deparemental Due:</dt>
+   <dd> <p> typically refers to the fee or contributions that student in a specific department of a university or collage are requied to pay. it play a crucial role in substaining and enhancing the education enviroment and oppurtunities  available to student within specific academic department   </p></dd>
+    </div>
+   <p class="para">These due serves the following purpose:</p>
+   
+    <ol>
+        <div class="dd">
+            <br>
+            <br>
+            <br>
+        <li>
+            <dt>Funding orientation:</dt>
+            <br>
+            <dd>Dues contribute to funding orientation program specifically to new students within the department, these can include ;</dd>
+            <ul>
+                <li>Introduction to foculty information session on academic requirements</li>
+                <li>Guidance on academic resources</li>
+            </ul>
+         </li>
+        
+         <br>
+         </div>
+         <br>
+         <div class="df">
+            <br>
+            <br>
+            <br>
+         <li>
+            <dt>Supporting orientation material</dt>
+            <br>
+            <br>
+            <dd>It also used in creating and distribuing orientation material such as; </dd>
+            <ul>
+                <li>Hand book guides</li>
+                <li>Outline resources that help students to navigate their departmental requirements </li>
+            </ul>
+         </li>
+         </div>
+         <br>
+         <div class="de">
+            <br>
+            <br>
+            <br>
+         <li>
+            <dt>Support departmental activities:</dt>
+            <br>
+            <br>
+            <dd>They fund event , seminar, workshop, and other activities that enriched educational experience of student within the department</dd>
+         </li>
+         <li>
+            <dt>Resources allocator:</dt>
+            <dd>Dues contribute to purchasing equipment, software licence, and other resources necessary for students learning and research within the department    </dd>
+         </li>
+         </div>
+         <br>
+         <div class="dg">
+            <br>
+            <br>
+            <br>
+         <li>
+            <dt>Professional development:</dt>
+            <br>
+            <dd>Some due may go towords funding professsional development oppurtunities for students such as;  </dd>
+            <ul>
+                <li>Attendiong conference</li>
+                <li>Networking  event.</li>
+            </ul>
+         </li>
+         </div>
+         <br>
+         <div class="dg">
+            <br>
+            <br>
+            <br>
+        <li>
+            <dt>Maintenance:</dt>
+            <br>
+            <dd>It also aids in maintening departmental facilities and infrastructure, ensuring students have access to up-to date and functional spaces for learnng. </dd>
+         </li>
+
+    </ol>
+</div>
+<script>
+        function change() {
+            const chn = document.querySelector(".options");
+            chn.style.display = chn.style.display ==="block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+<p class="ppp">&copy; 2024 computer science. All right reserve.</p>
+    <p class="ppp">contact us: abrajiabraji113@gmail.com | +234 8144005101</p>
+ 
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lanumberg="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpg</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .bd{
+            background-color: aquamarine;
+            margin-left: 26%;
+            height: 900px;
+            width: 50%;
+            box-shadow:  2px 2px 40px blue;   
+            border-radius: 2px ;    
+        }
+        .ppp{
+            text-align: center;
+        }
+        .hd{
+            text-align: center;
+        }
+        .ulg{
+            background-color: azure;
+            text-align: center;
+            width: 50%;
+            height: 300px;
+            margin-left: 140px;
+            box-shadow:  2px 2px 40px blue;
+            border-radius: 0px;
+         
+        }
+        img{
+            border-radius: 40px;
+             height: 160px;
+            width: 140px;
+            box-shadow:  2px 2px 40px blue;
+         
+        }
+        img:hover{
+        transform: scale(1.5);  
+        transition: all 3s ease-in-out;
+    
+       }
+        .htn{
+            display: grid;
+            grid-template-columns:repeat(2, 2fr);
+            column-gap: 140px;
+            padding: 40px;
+            margin-left: 32px;
+             }
+        .btn{
+            background-color: azure;
+            text-align: center;
+            width: 50%;
+            height: 100px;
+            margin-left: 140px; 
+           border-radius: 2px;
+            
+        }
+        .b:hover{
+            background-color:blue ;
+            color: bisque;
+            font-weight: bold;
+        }
+        .main-con-one{
+       display: flex;
+       justify-content: space-between;
+       padding: 10px;
+        position: relative;
+        background-color: aquamarine;
+       
+        box-sizing: border-box;
+    }
+.dash{
+    display:inline-block;
+    margin: 10px;
+    position: relative;
+   
+}
+.bar{
+    display:block;
+    height: 4px;
+    width: 40px;
+    margin: 5px 0;
+    background-color:blue;
+    cursor: pointer;
+       
+   
+
+}
+.options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 15%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+
+h1{
+   text-align: center;
+}
+.entire{
+    background-color: aquamarine;
+    height: auto;
+    width: auto;
+}
+.img1{
+height: 100px;
+width: 100px;
+border-radius: 10px;
+}
+a{
+text-decoration: none;
+
+}
+        .b{
+            height: 50px;
+            width: 180px;
+            font-size: large;
+            box-shadow:  2px 2px 40px blue;       
+
+        }
+        input{
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            color:black;
+            font-size: medium;
+        }
+        .error{
+            color:brown;
+            top: 50px;
+        }
+        @media(max-width:760px){
+         .bd{
+            background-color: aquamarine;
+            margin-left: 7%;
+            height: 900px;
+            width: 88%;
+            box-shadow:  2px 2px 40px blue;   
+            border-radius: 2px ;    
+        }
+        input{
+            height: 30px;
+            width: 120px;
+            border-radius: 10px;
+        }
+        .ulg{
+            background-color: azure;
+            text-align: center;
+            width: 60%;
+            height:270px;
+            margin-left: 65px;
+            box-shadow:  2px 2px 40px blue;
+            border-radius: 0px;
+         
+        }
+        .btn{
+            background-color: azure;
+            text-align: center;
+            width: 60%;
+            height: 100px;
+            margin-left: 65px;           
+            
+        }
+        .htn{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap:20px;
+            padding: 20px;
+            margin-left: 25%;
+             }
+        .hd{
+            text-align: center;
+            font-size: small;
+        }
+        img{
+            border-radius: 40px;
+             height: 120px;
+            width: 100px;
+            box-shadow:  2px 2px 40px blue;
+         
+        }
+        img:hover{
+        transform: scale(1.5);  
+        transition: all 3s ease-in-out;
+    
+       }
+       .b{
+            height: 30px;
+            width: 100px;
+            font-size: small;
+            box-shadow:  2px 2px 40px blue;       
+
+        }
+       .options{
+    display: none;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 45%;
+    padding: 1px;
+    border-radius: 10px;
+    left:  15px;
+    position: absolute;
+    top: 125px;  
+    box-shadow:  2px 2px 40px blue; 
+    font-weight:bold;
+   
+     
+}
+
+            
+
+        }
+    </style>
+</head>
+<body>
+<div class="entire">
+    <hr>
+    <br>
+    <div class="h">
+    <h1>COMPUTER SCIENCE DEPARTMENT</h1> 
+    </div> 
+    <hr>      
+    <div class="main-con-one">
+        
+        <div class="dash"onclick="change()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+             <br>
+        <div class="options">
+            <ul>
+                <li>
+                    <a href="index.html"><b>HOME</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="about.html"><b>ABOUT US</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="login.html"><b>LOGIN to pay due</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="wcsdue.html"><b>WHY DEPT. DUE</b></a>
+                </li>
+                <br>
+                <li>
+                    <a href="contact.html"><b>CONTACT US</b></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="mg">
+            <img class="img1" src="ht5.jpg" alt="logo">
+        </div>        
+
+    </div>
+</div>
+  <form id="validationForm" onsubmit="return validateForm(event)">
+    <div class="bd">
+        <br>
+        <div class="hd">
+            <h1>YOBE STATE UNIVERSITY</h1>
+            <h2>computer science department</h2>
+        </div>
+        <br>
+        <div class="htn">
+            <div class="img1">
+                <img src="n1.jpg" alt="ysu">
+            </div>
+            <div class="img1">
+                <img src="n2.jpg" alt="ncs">
+            </div>
+            
+        </div>
+        <br>
+        <br>
+       <br>
+        <br>
+        <div class="ulg">
+            
+            <br>
+            <h1>USER LOGIN</h1>
+            <br>
+            <input class="c" type="text" name="number1" id="number1" placeholder="enter your ID number"required>
+            <span id="number1Error" class="error"></span>
+            
+          
+            <br>
+            <br>
+            <br>
+            <input class="c"  type="text" name="number2" id="number2" placeholder="enter your JAMB number"required>
+            <span id="number2Error" class="error"></span>
+           
+        </div>
+        
+        <div class="btn">
+            <button class="b" type="submit">login</button>
+           
+        </div>
+    </div>
+    <script>
+        function validateForm(event){
+            event.preventDefault();//inbai cika qa idaba karyayi somit
+            //za ayi declaration a qasa(down)
+
+            var number1Input = document.getElementById('number1').value.trim();
+            var number1Pattern = /^[a-zA-Z]{1}\/[a-zA-Z]{2,3}\/[0-9]{2}\/[0-9]{3,4}$/;//wannan shine validation na id namba
+        
+            var number2Input = document.getElementById('number2').value.trim();
+            var number2Pattern = /^\d{8,14}[a-zA-Z]{2,3}$/;//wannan shine validation na jamb namba
+
+            var number1Error = document.getElementById('number1Error');
+            var number2Error = document.getElementById('number2Error');
+
+            if (!number1Pattern.test(number1Input) || (!number2Pattern.test(number2Input))){
+
+               // number2Error.textContent =
+                alert( 'invalid ID number or JAMB number!!');
+                return false;
+            }
+            else{
+                number1Error.textContent = '';
+                number2Error.textContent = '';
+                 alert( 'Data save succesfull');
+                window.location.href="paysntc.html";
+                return true;
+            }
+        
+        }
+        function change() {
+            const chn = document.querySelector(".options");
+            chn.style.display = chn.style.display ==="block" ? "none" : "block";
+        }
+    </script>
+    </div>
+    
+</form>
+ 
+</body>
+<p class="ppp">&copy; 2024 computer science. All right reserve.</p>
+    <p class="ppp">contact us: abrajiabraji113@gmail.com | +234 8144005101</p>
+ 
+</html>
